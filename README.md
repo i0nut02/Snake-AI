@@ -25,9 +25,17 @@ Snake AI is a snake game solver, it works following a Hamiltonian Path and uses 
   | 4 | ↑ | ← | ← | ← |
 
   
-  and with a grid 5x5? It doesn't exist, and probably doesn't exist for any grid with odd height and width.
+  and with a grid 5x5? It doesn't exist, and doesn't exist for any grid with odd height and width.
 
   So as you can see there is a pattern between the two Hamiltonian Cycles, the only difference is made by the height of the grid, which will change just the last two rows.
+
+  ### Algorithm
+  Every cell in the grid has an id, for example, the cell (i, j) with 0 < i <= h and 0 < j <= w has an id = i * w + j
+  1. `path = [1 * w + 1]` insert the first element
+  2. For each row starting from the first to the third last, insert the elements of the row (reverse the row if row_index % 2 == 1 in Python indexes starts from 0)
+  3. If h % 2 == 0 then insert the penultimate row and then the reversed  last row
+  4. else reverse and zip the two last rows and, then insert the elements of each tuple of the zip
+  5. Insert the first column upside down excluding the first element
 
 ## How does the heuristic function work?
   Problems to solve:
