@@ -32,9 +32,9 @@ Snake AI is a snake game solver, it works following a Hamiltonian Path and uses 
 ## How does the heuristic function work?
   Problems to solve:
   1. The snake can go in two directions.
-  2. When the snake is eating food, he has to entirely be on the Hamiltonian path, in this way, we will resolve the problem 100%.
+  2. When the snake is eating food, he has to entirely be on the Hamiltonian path, in this way, we will solve the problem 100%.
   3. The snake has to take some shortcuts that don't let him die.
-  4. The snake has to make as many movements as possible to eat the food
+  4. The snake has to make as few movements as possible to eat the food
 
 ### Solutions
 
