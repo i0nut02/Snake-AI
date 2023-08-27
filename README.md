@@ -37,9 +37,13 @@ Snake AI is a snake game solver, it works following a Hamiltonian Path and uses 
   4. The snake has to make as few movements as possible to eat the food
 
 ### Solutions
-
 * If the Hamiltonian distance from the head to the food is lower or equal to the length of the snake, then we have to follow the Hamiltonian path (reversed or not).
 * For each possible move we have to ensure that following the Hamiltonian path the snake will not die.
 * We have to consider each direction for each possible move, which means that we can reverse the Hamiltonian path that you have seen before.
-* The snake can move the head in 4 directions (up, down, right, left) and for each, we will take the shortest one to the food (and distance >= snake_lenght if don't follow the Hamiltonian path)
+* The snake can move the head in 4 directions (up, down, right, left) and for each, we will take the shortest one to the food
+
+## Visual Solution
+https://github.com/i0nut02/Snake-AI/assets/99051485/3d13aa30-1e72-4706-a2c2-7b62e5238805
+
+
 
